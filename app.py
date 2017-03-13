@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 
 def hello():
-    cmd = ["ls"," -l"]
+    cmd = ["ls","-l"]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE,
                             stderr=subprocess.PIPE,
                             stdin=subprocess.PIPE)
